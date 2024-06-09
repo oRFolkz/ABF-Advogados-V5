@@ -678,7 +678,8 @@ header {
     .cardAboutUsTxt {
         border: var(--border) solid var(--color-gold) !important;
         width: 95%;
-        padding: 2rem 0 2rem 3.5rem;
+        padding: 1rem 0 2rem 1.5rem;
+        margin-bottom: 2rem;
     }
     .cardAboutUsImg {
         margin-bottom: 1rem;
@@ -785,6 +786,28 @@ header {
     }
 }
 
+@media ( width < 680px ) {
+    .commentsContainer{
+        padding: 2rem 0;
+    }
+    .commentsSubContainer {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    .commentsUsers {
+        margin: 2rem;
+    }
+    .starsText,
+    .starsSubText,
+    .starContainer {
+        padding: 0;
+    }
+    .commentsFiveStars {
+        width: 100%;
+    }
+}
+
 /********************************************************************/
 /* ### Skill Cards ### */
 /* ### Skill Cards ### */
@@ -861,7 +884,24 @@ header {
     margin-bottom: 1rem;
 }
 
-
+@media ( width < 680px ) {
+    .cards {
+        flex-direction: column;
+        gap: 0;
+        width: 90% !important;
+        height: auto !important;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    .cardSubcontainer{
+        order: 1;
+    }
+    .cardSubcontainerTitle,
+    .cardSubcontainerDescription {
+        height: auto !important;
+        padding: 1rem 2rem !important;
+    }
+}
 
 /********************************************************************/
 /* ### Hover left bubble ### */
@@ -939,7 +979,22 @@ header {
     transform: scale(1);
 }
 
-
+@media ( width < 680px ) {
+    .hoverLink{
+        display: none;
+    }
+    .hoverCircle {
+        bottom: 80px;
+        right: 0px;
+    }
+    .whatsappIcon{
+        background-color: rgba(37 211 102);
+        color: white;
+        font-size: 2.5rem;
+        border-radius: 50%;
+        padding: .6rem .6rem .7rem .7rem;
+    }
+}
 
 /********************************************************************/
 /* ### FOOTER ### */
@@ -1053,5 +1108,9 @@ footer {
         width: 120%;
         height: 110%;
         padding-bottom: 2rem;
+    }
+    .footerSubContainer{
+        flex-direction: column;
+        height: auto;
     }
 }
