@@ -2,7 +2,7 @@
 /* ### Banner SlideShow ### */
 /* ### Banner SlideShow ### */
 /********************************************************************/
-const mainBannerJS = document.querySelector('.mainBannerJS')
+const mainBannerJS = document.querySelector('.mainBannerJS');
 
 let currentIndex = 0
 const slideShow = () => {
@@ -234,16 +234,16 @@ btnCrimi.addEventListener('click', () => {
     crimiCard.classList.remove('hide');
     crimiCard.classList.add('show');
 });
-btnInv.addEventListener('click', () => {
+/* btnInv.addEventListener('click', () => {
     hideServiceSubCard();
     invCard.classList.remove('hide');
     invCard.classList.add('show');
-});
-btnApo.addEventListener('click', () => {
+}); */
+/* btnApo.addEventListener('click', () => {
     hideServiceSubCard();
     apoCard.classList.remove('hide');
     apoCard.classList.add('show');
-});
+}); */
 
 const hideServiceSubCard = () => {
     serviceSubCard[0].classList.add('hide')
@@ -273,3 +273,23 @@ const hardCodeCloseAllSubCard = () => {
     apoCard.classList.remove('show')
     apoCard.classList.add('hide')
 };
+
+/********************************************************************/
+/* ### Mobile CloseLinks ### */
+/* ### Mobile CloseLinks ### */
+/********************************************************************/
+const linksMobile = document.querySelector('.linksMobile');
+const showLinksMobile = document.querySelector('.showLinksMobile');
+const closeMobileLinks = document.querySelector('.closeMobileLinks');
+const links = document.querySelector('.links');
+const peticoesButton = document.querySelector('.peticoesButton');
+const iconsHeader = document.querySelector('.iconsHeader');
+
+
+linksMobile.addEventListener('click', function() {
+    showLinksMobile.style.top = '0px';
+});
+
+closeMobileLinks.addEventListener('click', () => {
+    showLinksMobile.style.top = "-500px";
+});
