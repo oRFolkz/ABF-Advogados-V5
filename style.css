@@ -496,13 +496,20 @@ header {
         display: none;
     }
     .servicesCard{
-        margin: none;
+        margin: 0;
     }
     .henriqueDiv,
     .anaDiv,
     .gabrieleDiv,
     .larissaDiv {
     max-width: 20rem;
+    }
+    .singleItemScrollHenrique,
+    .singleItemScrollAna,
+    .singleItemScrollGabriele,
+    .singleItemScrollLarissa {
+    padding: 0rem;
+    height: 180px
     }
 }
 @media ( width < 660px ) {
