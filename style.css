@@ -101,6 +101,7 @@ header {
     padding: 5px;
     border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .icons:hover{
@@ -309,6 +310,10 @@ header {
         margin: .5rem 0 1rem 0;
         padding: .5rem 2rem;
         font-size: 1.2rem;
+    }
+    .servicosHoverOptions,
+    .quemSomosHoverOptions {
+        display: none !important;
     }
 }
 /********************************************************************/
@@ -1033,8 +1038,8 @@ header {
         display: none;
     }
     .hoverCircle {
-        bottom: 80px;
-        right: 0px;
+        bottom: 100px;
+        right: 20px;
     }
     .whatsappIcon{
         background-color: rgba(37 211 102);

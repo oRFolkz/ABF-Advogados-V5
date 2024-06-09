@@ -274,6 +274,8 @@ const hardCodeCloseAllSubCard = () => {
     apoCard.classList.add('hide')
 };
 
+
+
 /********************************************************************/
 /* ### Mobile CloseLinks ### */
 /* ### Mobile CloseLinks ### */
