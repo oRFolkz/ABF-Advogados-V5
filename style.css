@@ -250,9 +250,9 @@ header {
 
 .closeMobileLinks{
     position: absolute;
-    top: 1rem;
-    left: 2rem;
-    font-size: 2rem;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
     color: var(--color-gold);
 }
 
@@ -307,7 +307,7 @@ header {
     }
     .peticoesButton button{
         margin: .5rem 0 1rem 0;
-        padding: .8rem;
+        padding: .5rem 2rem;
         font-size: 1.5rem;
     }
 }
