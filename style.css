@@ -721,7 +721,7 @@ header {
     }
     .cardAboutUsTxt {
         border: var(--border) solid var(--color-gold) !important;
-        width: 95%;
+        width: 90%;
         max-width: 550px;
         padding: 1rem 0 2rem 1.5rem;
         margin-bottom: 2rem;
@@ -729,7 +729,7 @@ header {
     .cardAboutUsImg {
         margin-bottom: 1rem;
         width: 80%;
-        max-width: 350px;
+        max-width: 300px;
     }
     .cardAboutUsImg img {
         width: 100% !important;
