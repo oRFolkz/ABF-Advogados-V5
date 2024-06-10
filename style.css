@@ -119,7 +119,6 @@ header {
     background-color: transparent;
     border: 2px solid var(--color-gold);
     padding: 5px 20px 5px 10px;
-    margin: 0 1rem;
     color: var(--color-gold);
     border-radius: 0.5rem 0.5rem 2rem 0.5rem;
     font-weight: bold;
@@ -143,35 +142,38 @@ header {
 
 .iconsHeader {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-left: 0.8rem;
     font-size: 1.55rem;
     align-self: center;
 }
 
 .iconsHeader i {
+    font-size: 1.8rem;
     cursor: pointer;
-    color: var(--color-gold);
     transition: transform 0.3s ease;
 }
 
-.fa-instagram:hover {
+.fa-instagram {
     color: transparent;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background-clip: text;
     -webkit-background-clip: text;
-    transform: scale(1.3)
 }
 
-.fa-facebook:hover {
-    color: rgba(66 103 178);
-    transform: scale(1.3)
+.fa-facebook {
+    color: rgb(53, 104, 207) !important;
 }
 
-.fa-whatsapp:hover {
-    color: rgba(37 211 102);
-    transform: scale(1.3)
+.fa-whatsapp {
+    color: rgba(37 211 102) !important;
+}
+
+.fa-facebook:hover,
+.fa-whatsapp:hover,
+.fa-instagram:hover {
+    transform: scale(1.3);
 }
 
 .hoverLinks{
@@ -271,14 +273,19 @@ header {
         gap: 1rem;
     }
     .peticoesButton{
-        margin: 0;
+        margin: 1rem;
     }
     .headerContainer {
         width: 90%;
     }
 }
 
-@media ( width < 680px ) {
+@media ( width < 800px) {
+    .headerContainer {
+        height: 120px;
+    }
+}
+@media ( width < 685px ) {
     .headerContainer {
         justify-content: space-between;
     }
@@ -402,6 +409,7 @@ header {
 
 .serviceCardInside{
     padding-top: 2rem;
+    padding-left: 2rem;
     display: flex;
     align-items: center;
     transition: all 0.5s ease;
@@ -411,7 +419,7 @@ header {
     border: none;
     border-radius: 1rem 1rem 10rem 1rem;
     transition: all 0.5s ease;
-    margin-left: 5rem;
+    margin-left: 3rem;
     width: 20rem;
 }
 
@@ -976,9 +984,9 @@ header {
     border: 1px solid var(--color-gold);
     border-left: 0px solid var(--color-gold);
     background-color: var(--dark-grey);
-    border-radius: 1rem 0.5rem 3rem 0;
-    width: 300px;
-    height: 80px;
+    border-radius: 1rem 3rem 0rem 0;
+    width: 280px;
+    height: 100px;
     display: flex;
     align-items: center;
 }
@@ -1043,7 +1051,7 @@ header {
     }
     .whatsappIcon{
         background-color: rgba(37 211 102);
-        color: white;
+        color: white !important;
         font-size: 2.5rem;
         border-radius: 50%;
         padding: .7rem;
@@ -1105,8 +1113,12 @@ footer {
     margin-left: 1rem;
 }
 
+.footerInfo .fa-whatsapp {
+    color: white !important;
+}
+
 .footerInfo p,
-.footerTime p{
+.footerTime p {
    margin: 0;
 }
 
